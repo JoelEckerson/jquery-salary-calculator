@@ -1,12 +1,17 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: bisque;
-}
 
-#salaryTable{
-    border: 1px solid black;
-}
-
-h2{
+    border-style: solid;
+    border-width: 3px;
     
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(231, 227, 221, 0.966);
+}
+
+#salaryTable, tr, td{
+    border: 1px solid black;
+    
+}
+
+#monthly{
+    text-align: right;
 }
