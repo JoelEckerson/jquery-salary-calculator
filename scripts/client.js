@@ -39,7 +39,7 @@ function displayEmployee( alsoEmployees ){
         <td>${ alsoEmployees[i].lastName}</td>
         <td>${ alsoEmployees[i].id}</td>
         <td>${ alsoEmployees[i].title}</td>
-        <td>${ alsoEmployees[i].annualSalary}</td>
+        <td class="salary">${ alsoEmployees[i].annualSalary}</td>
         <td><button class="deleteRowButton">Delete</button></td>
         </tr>`);
     }
@@ -61,7 +61,7 @@ function calculateSalary ( andAlsoEmployees ){
     $( '#totalMonthlyOutput' ).empty();
     $( '#totalMonthlyOutput' ).append(salary/12);
     if(salary/12 > 20000){
-     $( '#totalMonthlyOutput' ).css("background-color", "red" );
+     $( '#totalMonthly' ).css("background-color", "red" );
     }
     // append it to the DOM
     // if it's over 20k monthly turn red
@@ -69,5 +69,7 @@ function calculateSalary ( andAlsoEmployees ){
 }
 
 function deleteRow(){
+    let deletedText = $( this ).closest('tr').children('td.salary').text();
+    console.log( deletedText );
     console.log( 'in deleteRow:', $( this ).parent().parent().fadeOut() );
 }

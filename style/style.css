@@ -1,17 +1,47 @@
 body{
-
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 4%;
     border-style: solid;
     border-width: 3px;
     
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgba(231, 227, 221, 0.966);
+    background-color: white;
 }
 
-#salaryTable, tr, td{
-    border: 1px solid black;
-    
+#salaryTable{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 100px;
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .25xp)
+}
+
+#salaryTable thead tr{
+    background-color: red;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+#salaryTable th,
+#salaryTable td{
+    padding: 12px 15px;
+}
+
+#salaryTable tbody tr{
+    border-bottom: 1px solid lightgrey;
+    background-color: white;
+}
+
+#salaryTable tbody tr:nth-of-type(even){
+    background-color: lightgrey;
 }
 
 #monthly{
     text-align: right;
+
 }
