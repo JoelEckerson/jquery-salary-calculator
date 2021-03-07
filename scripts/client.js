@@ -44,7 +44,7 @@ function displayEmployee( alsoEmployees ){
         </tr>`);
     }
 
-    deleteRow();
+    //deleteRow();
     calculateSalary( alsoEmployees );
 }
 
