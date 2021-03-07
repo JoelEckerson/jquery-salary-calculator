@@ -11,6 +11,19 @@ h2{
     margin-left: 3%;
 }
 
+#firstNameInput{
+    margin-left: 3%;
+}
+
+#submitButton{
+    box-shadow: 0 0 20px rgba(0, 0, 0, .10);
+}
+
+.placeholder{
+    box-shadow: 0 0 20px rgba(0, 0, 0, .10);
+    border-radius: 4px;
+}
+
 body{
     width: 92%;
     margin-left: 4%;
@@ -24,19 +37,17 @@ body{
 
 #salaryTable{
     border-collapse: collapse;
-    margin: 25px 0;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 0.9em;
-    min-width: 100px;
-    border-radius: 3px 3px 0 0;
-    overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, .10);
-   
+    table-layout: fixed;
+    width: 700px;
 }
 
 #salaryTable thead tr{
     background-color: rgb(252, 220, 115);
-
-    color: white;
+    color: rgb(114, 114, 114);
     text-align: left;
     font-weight: bold;
 }
@@ -47,12 +58,17 @@ body{
 }
 
 #salaryTable tbody tr{
+    border-top: 1px solid lightgray;
     border-bottom: 1px solid lightgrey;
     background-color: white;
 }
 
 #salaryTable tbody tr:nth-of-type(even){
     background-color: rgb(241, 241, 241);
+}
+
+#salaryTable tfoot tr{
+    background-color: rgb(255, 253, 235);
 }
 
 #monthly{

@@ -43,7 +43,7 @@ function displayEmployee( alsoEmployees ){
         <td><button class="deleteRowButton">Delete</button></td>
         </tr>`);
     }
-
+    
     //deleteRow();
     calculateSalary( alsoEmployees );
 }
@@ -57,9 +57,10 @@ function calculateSalary ( andAlsoEmployees ){
     for (let i = 0; i < andAlsoEmployees.length; i++) {
         salary += Number(andAlsoEmployees[i].annualSalary);   
     }
+    let monthlySalary = salary / 12;
     // add and divide it by 12
     $( '#totalMonthlyOutput' ).empty();
-    $( '#totalMonthlyOutput' ).append(salary/12);
+    $( '#totalMonthlyOutput' ).append(monthlySalary.toFixed(2));
     if(salary/12 > 20000){
      $( '#totalMonthly' ).css("background-color", "red" );
     }
